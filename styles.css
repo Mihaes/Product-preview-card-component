@@ -110,7 +110,7 @@ h3 {
 
 
 .perfume__image {
-    background-image: url(./images/image-product-desktop.jpg);
+    background-image: url(images/image-product-desktop.jpg);
     background-size: cover;
     border-radius: 1rem 0 0 1rem;
     width: 300px;
@@ -170,7 +170,7 @@ h3 {
     }
 
     .perfume__image {
-        background-image: url(./images/image-product-mobile.jpg);
+        background-image: url(images/image-product-mobile.jpg);
         border-radius: 1rem 1rem 0 0;
         width: 400px;
         height: 300px;
