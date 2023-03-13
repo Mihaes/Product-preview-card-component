@@ -39,10 +39,12 @@ html {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: .3rem;
+    font-family: var(--secondary);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--DarkGRIEsh)
 }
 
 
@@ -83,44 +85,49 @@ h3 {
 /**Peroduct**/
 
 
-.product {
+.perfume{
     display: flex;
     justify-content: center;
     align-items: center;
-
+   
+    
 }
 
 
+
+
+
 .perfume__container {
-width: 350px;
-height: 600px;
-margin: 2rem auto;
-background-color: var(--white);
-border-radius: 1rem;
-display: grid;
-row-gap: .1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     margin-top: 200px;
+}
+    
+
+
+
+.perfume__image{
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+    width: 300px;
+    height: 500px;
+   
 
 }
 
 .perfume__info{
-    padding: 1rem;
-   
-   
-}
-.perfume__image{
-    background-image: url(/images/image-product-mobile.jpg);
-    background-size: cover;
-    border-radius: 1rem 1rem 0 0;
-    width: 350px;
-    height:250px;
-   
-
+    background-color: var(--white);
+    border-radius: 0 1rem 1rem 0;
+    width: 300px;
+    height: 500px;
+    padding: 2rem;
+    
+    
 }
 
 
-.pefume__info {
-    background-color: white;
-}
 
 .price{
     color:var(--DarkCyan);
@@ -153,29 +160,27 @@ row-gap: .1rem;
 }
 
 
-@media(min-width:375px){
-    .perfume__container{
-        display: flex;
-        width: 800px;
-        height: 600px;
-        
-    
 
+
+@media(max-width:768px){
+    .perfume__container{
+        flex-direction: column;
+    }
+
+    .perfume__image{
+        background-image: url(/images/image-product-mobile.jpg);
+        border-radius: 1rem 1rem 0 0 ;
+        width: 400px;
+        height: 300px;
 
     }
 
     .perfume__info{
         background-color: var(--white);
-        width: 700px;
-        border-radius: 1rem;
-    }
-
-    .perfume__image{
-        background-image: url(/images/image-product-desktop.jpg);
-        width: 800px;
-        height: 600px;
-        background-size: cover;
-     
-        border-radius: 1rem 0 0 1rem;
+        border-radius: 0 0 1rem 1rem;
+        padding: 2rem;
+        width: 400px;
+        height: 430px;
+        padding: 2rem;
     }
 }
