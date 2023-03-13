@@ -6,7 +6,7 @@
     --Cream: hsl(30, 38%, 92%);
     --DarkBlue: hsl(212, 21%, 14%);
     --white: hsl(0, 0%, 100%);
-    --DarkGRIEsh :hsl(228, 12%, 48%);
+    --DarkGRIEsh: hsl(228, 12%, 48%);
 
 
     /**fonts**/
@@ -64,13 +64,15 @@ h1 {
 
 }
 
-p{font-family: var(--secondary);
+p {
+    font-family: var(--secondary);
     color: var(--DarkGRIEsh);
     font-size: .9rem;
     line-height: 1.5rem;
-    
+
 
 }
+
 h3 {
     font-family: var(--secondary);
     color: var(--DarkGRIEsh);
@@ -78,19 +80,19 @@ h3 {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    line-height: .1rem   ;
+    line-height: .1rem;
 }
 
 
 /**Peroduct**/
 
 
-.perfume{
+.perfume {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+
+
 }
 
 
@@ -101,81 +103,81 @@ h3 {
     justify-content: center;
     align-items: center;
     display: flex;
-     margin-top: 200px;
+    margin-top: 200px;
 }
-    
 
 
 
-.perfume__image{
+
+.perfume__image {
     background-image: url(/images/image-product-desktop.jpg);
     background-size: cover;
     border-radius: 1rem 0 0 1rem;
     width: 300px;
     height: 500px;
-   
+
 
 }
 
-.perfume__info{
+.perfume__info {
     background-color: var(--white);
     border-radius: 0 1rem 1rem 0;
     width: 300px;
     height: 500px;
     padding: 2rem;
-    
-    
+
+
 }
 
 
 
-.price{
-    color:var(--DarkCyan);
+.price {
+    color: var(--DarkCyan);
     font-family: var(--primary);
     font-size: 2rem;
     line-height: .1rem;
 }
 
-.price span{
+.price span {
     color: var(--DarkGRIEsh);
     font-family: var(--secondary);
     font-size: 1rem;
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
-.submit{
+.submit {
     background-color: var(--DarkCyan);
     display: block;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
-    border-radius: .5rem    ;
+    border-radius: .5rem;
     font-family: var(--secondary);
     color: var(--white);
 
 }
 
-.submit:active{
+.submit:active {
     background-color: var(--DarkBlue);
 }
 
 
 
 
-@media(max-width:768px){
-    .perfume__container{
+@media(max-width:768px) {
+    .perfume__container {
         flex-direction: column;
     }
 
-    .perfume__image{
+    .perfume__image {
         background-image: url(/images/image-product-mobile.jpg);
-        border-radius: 1rem 1rem 0 0 ;
+        border-radius: 1rem 1rem 0 0;
         width: 400px;
         height: 300px;
 
     }
 
-    .perfume__info{
+    .perfume__info {
         background-color: var(--white);
         border-radius: 0 0 1rem 1rem;
         padding: 2rem;
